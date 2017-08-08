@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       pages: {
         files: {
-          './': ['src/pages/*.hbs']
+          'docs/': ['src/pages/*.hbs']
         }
       }
     },
@@ -41,22 +41,22 @@ module.exports = function(grunt) {
     sass: {
       pretty: {
         src: ['src/sass/style.scss'],
-        dest: 'css/style.css'
+        dest: 'docs/css/style.css'
       },
       minify: {
         options: {
           style: 'compressed'
         },
         src: ['src/sass/style.scss'],
-        dest: 'css/style.css'
+        dest: 'docs/css/style.css'
       }
     },
     uglify: {
       minify: {
         options: {},
         files: {
-          'js/script.js': ['src/js/*.js'],
-          'js/lib.js': ['vendor-js/jquery.js', 'vendor-js/*.js'],
+          'docs/js/script.js': ['src/js/*.js'],
+          'docs/js/lib.js': ['vendor-js/jquery.js', 'vendor-js/*.js'],
         }
       },
       pretty: {
@@ -68,8 +68,8 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          'js/script.js': ['src/js/*.js'],
-          'js/lib.js': ['vendor-js/jquery.js', 'vendor-js/*.js'],
+          'docs/js/script.js': ['src/js/*.js'],
+          'docs/js/lib.js': ['vendor-js/jquery.js', 'vendor-js/*.js'],
         }
       }
     }
