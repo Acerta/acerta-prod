@@ -35,7 +35,19 @@ Run `npm install` in the project directory to download all the node modules
 
 You are ready to start making changes now!
 
-### Build process
+## Making updates
+
+The structure of the source files is as follows
+
+js -> javascript functions inside main.js
+layout -> the format and template for all html files to be based from
+pages -> the body text for every page
+partials -> the reusable code snippets that can be added to any page
+sass -> the sass code used for styling, which will be converted to css
+
+To add a new page/make a change to any of the webpages, simply create/edit the content of the given .hbs file inside the pages directory.
+
+## Build process
 
 The build directory is the docs folder. This is where the finished files will reside.
 
