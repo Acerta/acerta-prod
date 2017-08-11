@@ -96,9 +96,9 @@ Clone the main repo
 git clone https://github.com/Acerta/Acerta.github.io.git
 ```
 
-Copy all the files from the docs folder to replace the files from the Acerta.github.io repo.
+Copy all the files from the acerta-prod:docs folder to replace the old files in the Acerta.github.io repo.
 
-Commit and push the files to the repo.
+Commit and push the new files in the Acerta.github.io repo.
 
 The changes will be reflected in the main website shortly.
 
