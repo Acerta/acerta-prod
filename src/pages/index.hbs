@@ -3,41 +3,105 @@ title: index
 ---
     <section class="intro-banner">
       <div class="container-fluid">
-        <div class="row text-center">
-          <div class="col-md-8 col-md-offset-2">
-            <h1 class="content">Dynamic Machine Learning for Vehicle Data</h1>
-          </div>
+        <div class="row">
+            <div class="col-md-12">
+            	<br>
+            	<h1 class="content" align="left">Boost Your Quality Control With Acerta</h1>
+            	<br>
+            	<h2 class="content" style="font-weight:normal; letter-spacing: 1px; text-align: justify;">Machine Learning Platform for Extracting Actionable Insight from Test Data, Trusted by OEMs and Tier-1 Manufacturers</h2>
+            	<br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2">
+            	<a class="btn-acerta" href="contact.html">Let's Talk</a> 
+            	<a class="btn-new" href="product.html">Learn More</a>
+            	<br>
+            </div>
+            
         </div>
       </div>
     </section>
-    <section class="main-intro">
+
+    <section class="customers">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-2 col-md-offset-2 text-center">
-          <h1>What we do</h1>
-          </div>
-          <div class="col-md-7">
-            <p>Acerta helps companies better understand their vehicle data by reducing the resources needed to detect faults and find the root cause of these faults.</p>
-            <p>Companies are already collecting massive amounts of data, our continuous analysis of this vehicle data will provide valuable insights into vehicle performance, health and maintenance.</p>
-            <p>Acerta unlocks the hidden value in vehicle data.</p>
+        <div class="text-center row">
+          <div class="col-md-2 img-wrapper"><img src="images/clients/FCA.png" alt=""></div>
+          <div class="col-md-2 img-wrapper"><img src="images/clients/Magna.png" alt=""></div>
+          <div class="col-md-2 img-wrapper"><img src="images/clients/Roush.png" alt=""></div>
+          <div class="col-md-2 img-wrapper"><img src="images/clients/GM.jpg" alt=""></div>
+          <div class="col-md-2 img-wrapper"><img src="images/clients/ZF.jpg" alt=""></div>
+          <div class="col-md-2 img-wrapper"><img src="images/clients/QNX.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="main-intro" style="padding-top: 10px;">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-10 col-md-offset-1">
+          	<h1>What We Do</h1>
+            <br>
+            <p>Acerta offers a SaaS platform that uses machine learning to provide real-time malfunction detection and failure prediction. Our proprietary state-of-the-art machine learning algorithm allows our clients to access the full potential of their collected data.</p> 
+            <p>The platform learns the normal behavior of the tested system and the complex correlations between data streams, and automatically detects anomalies in real-time. It assists engineers in identifying the root cause and provides them with actionable insight, thus saving millions of dollars in down time, engineering resources, warranty claims, and legal expenses.</p>
           </div>
         </div>
       </div>
     </section>
 
     {{#parseJSON '{
-      "text": "See how Acerta saves you money and time!",
-      "link": "product.html",
-      "btn-text": "Learn More"
+      "btn1-text": "Applications",
+      "link1": "product.html",
+      "btn2-text": "Success Stories",
+      "link2": "case-studies.html"    
     }'}}
       {{> cta }}
     {{/parseJSON}}
+
+    <section class="advantages">
+      <div class="container-fluid text-center">
+      <div class="row">
+      	<h1>Augment Your Quality Control Process With AI</h1><br><br>
+        <div class="col-md-1 advantage-item">
+          	<img src="images/advantage1.svg" alt="clock to represent real-time">
+        </div>
+        <div class="col-md-4">
+        	<h3 align="left">Real Time</h3>
+          	<p align="justify">Data is Analyzed as it is collected and anomalies are reported immediately</p>
+        </div>
+        <div class="col-md-1 col-md-offset-1 advantage-item">
+          	<img src="images/advantage2.svg" alt="rocket to represent dynamic">
+        </div>
+        <div class="col-md-4">  
+        	<h3 align="left">Dynamic</h3>
+          	<p align="justify">The algorithm learns and adjusts as changes are introduced to the BOM and manufacturing process</p>
+        </div>
+      </div>
+
+      <div class="row"><br><br>
+        <div class="col-md-1 advantage-item">
+          <img src="images/advantage3.svg" alt="graph to represent scalable">
+        </div>
+        <div class="col-md-4">
+          <h3 align="left">Scalable</h3>
+          <p align="justify">The algorithm is easily applied to new models and improves with the growth in amount of collectd data</p>
+        </div>
+        <div class="col-md-1 col-md-offset-1 advantage-item">
+          <img src="images/advantage4.svg" alt="knobs to represent flexible">
+        </div>
+        <div class="col-md-4">
+          <h3 align="left">Simple and Seamless Integration</h3>
+          <p align="justify">The platform is seamlessly implemented into existing quality control processes with no additional hardware, using a dedicated API</p>
+        </div>
+      </div>
+      </div>
+    </section>
 
     <section class="how-it-works">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-offset-3 col-md-6 text-center">
-            <h1>How it works</h1>
+            <h1>How It Works</h1>
           </div>
         </div>
         <div class="row">
@@ -45,15 +109,15 @@ title: index
             <ol>
               <li>
                 <h2>Acquire</h2>
-                <p>Send your vehicle data to our secure private cloud using your existing data collection setup</p>
+                <p>Data is collected using existing data collection setup, and sent to our secure private cloud</p>
               </li>
               <li>
                 <h2>Analyze</h2>
-                <p>Our machine learning platform analyzes the data looking for unusual anomalies and problems</p>
+                <p>Our machine learning platform analyzes the data and identifies anomalies representative of defects</p>
               </li>
               <li>
                 <h2>Alert</h2>
-                <p>Be alerted in real-time when problems are detected to take immediate action</p>
+                <p>Your system is notified in real-time when an issue is detected, allowing you to take immediate action</p>
               </li>
             </ol>
 
@@ -64,15 +128,13 @@ title: index
         </div>
       </div>
     </section>
-    <section class="customers">
-      <div class="container-fluid">
-        <div class="text-center row">
-          <div class="col-md-3 img-wrapper"><img src="images/company1.png" alt=""></div>
-          <div class="col-md-3 img-wrapper"><img src="images/company2.png" alt=""></div>
-          <div class="col-md-3 img-wrapper"><img src="images/company3.png" alt=""></div>
-          <div class="col-md-3 img-wrapper"><img src="images/company4.png" alt=""></div>
-        </div>
-      </div>
-    </section>
+    
 
-    {{> demo }}
+    {{#parseJSON '{
+      "btn1-text": "See It In Action",
+      "link1": "contact.html",
+      "btn2-text": "Uses",
+      "link2": "product.html"    
+    }'}}
+      {{> cta }}
+    {{/parseJSON}}

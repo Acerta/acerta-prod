@@ -43,7 +43,7 @@ body,
 /* ------ Branding -----*/
 
 body {
-  padding-top: 75px;
+  padding-top: 45px;
   color: $secondary-color;
   background-color: $primary-color;
   font-family: "Roboto", sans-serif;
@@ -59,7 +59,6 @@ h4 {
 }
 
 h1 {
-  color: $secondary-color-light;
   font-size: 32px;
   @media (min-width: $sm-up){
     font-size: 40px;
@@ -96,6 +95,7 @@ p, a {
 
 p {
   color: $secondary-color-lightest;
+  text-align: justify;
 
 }
 
@@ -116,8 +116,11 @@ a {
   font-size: 18px;
   color: $primary-color;
   background-color: $hover;
-  border: 2px solid $hover-active;
+  border-radius: 8px;
+  border: 1px solid $hover-active;
   margin-top: 5px;
+  padding: 10px 30px;
+  position: relative;
   &:focus, &:hover {
     color: $primary-color;
     background-color: $hover-active;
@@ -127,6 +130,28 @@ a {
     background-color: $hover-active;
   }
 }
+
+
+.btn-new {
+  font-size: 18px;
+  color: $hover-active;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 2px solid $hover-active;
+  margin-top: 5px;
+  padding: 10px 30px;
+  margin-left: 20px;
+  position: relative;
+  &:focus, &:hover {
+    color: $primary-color;
+    background-color: $hover-active;
+  }
+  &.submitted {
+    opacity: 1;
+    background-color: $hover-active;
+  }
+}
+
 
 .form-msg {
   padding: 5px;
@@ -147,7 +172,7 @@ section {
 .navbar {
   background-color: $secondary-color;
   @media (min-width: $sm-up) {
-    padding: 0 65px;
+    padding: 0 25px;
   }
 }
 
@@ -161,9 +186,9 @@ section {
 }
 
 .nav > li > a {
-  padding-top: 30px;
-  padding-bottom: 25px;
-  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 16px;
   color: $primary-color;
   &:focus,
   &.active {
@@ -177,15 +202,17 @@ section {
 }
 
 .navbar-brand>img {
-  height: 50px;
+  height: 30px;
+  vertical-align: middle;
 }
 
 /* ---------    CTA banner   --------- */
 
 .cta {
-  color: $primary-color;
+  background-color: $primary-color;
   width: 100%;
-  background-image: url(../images/cta-bg.png);
+  padding-top: 20px;
+  padding-bottom: 50px;
   background-size: cover;
   background-position: center center;
 }
@@ -196,8 +223,8 @@ section {
 
 .intro-banner {
   width: 100%;
-  height: 450px;
-  background-image: url(../images/car.jpg);
+  height: 480px;
+  background-image: url(../images/car-bw.jpg);
   background-size: cover;
   background-position: center center;
   &:before {
@@ -205,20 +232,20 @@ section {
     display: block;
     position: absolute;
     left: 0;
-    top: 75px;
+    top: 50px;
     width: 100%;
-    height: 450px;
-    background: rgba(50, 50, 50, 0.90);
+    height: 475px;
+    background: rgba(250, 255, 250, 0.84);
   }
   .content {
-    color: $primary-color;
+    color: $secondary-color;
     position: relative;
     padding-top: 50px;
     letter-spacing: 2px;
     max-width: 340px;
     margin: 0 auto;
     @media (min-width: $sm-up) {
-      max-width: 550px;
+      max-width: 75%;
     }
   }
 }
@@ -226,7 +253,7 @@ section {
 /* ----- How it works ----- */
 
 .how-it-works {
-  background-color: $primary-color-dark;
+  background-color: $primary-color;
   li {
     font-size: 30px;
     max-width: 400px;
@@ -247,20 +274,38 @@ section {
 /* ----- Customers ----- */
 
 .customers {
+  padding-bottom: 10px; 
+  padding-top: 0px;
   .img-wrapper {
-    min-height: 10em;
+    min-height: 1em;
     line-height: 10em;
   }
   img {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px 0px;
-    @media (min-width: $md-up) {
-      width: 200px;
+    max-height: 160px;
+    max-width: 140px;
+    margin: 4px 0px;
+  }
+}
+
+.advantages {
+  background-color: $primary-color;
+  .advantage-item {
+    padding: 20px 0px;
+  }
+  p {
+    text-align: justify;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+  h3 {
+    text-align: left;
+  }
+  img {
+    max-width: 100%;
+    @media (min-width: $sm-up) {
+      max-width: 100px;
     }
-    @media (min-width: $lg-up) {
-      width: 250px;
-    }
+    padding: 10px;
   }
 }
 
@@ -287,14 +332,9 @@ section {
   }
 }
 
-.advantages {
-  background-color: $primary-color-dark;
-  .advantage-item {
-    padding: 50px 0px;
-  }
+.product-intro {
   p {
-    max-width: 400px;
-    margin: 0 auto;
+    align: justify;
   }
 }
 
@@ -303,7 +343,7 @@ section {
     height: 2em;
   }
   img {
-    max-width: 100%;
+    max-width: 120%;
     @media (min-width: $sm-up) {
       max-width: 400px;
     }
@@ -320,9 +360,14 @@ section {
     padding: 0px;
   }
   .automotive {
+    padding: 30px;
     @media (min-width: $md-up) {
       border-right: 2px solid $secondary-color;
     }
+  }
+
+  .fleet {
+    padding: 30px;
   }
 }
 
@@ -332,18 +377,18 @@ section {
 .case-studies {
   padding: 0px;
   .container-fluid, .row, .bg {
-    padding: 0px;
+    padding: 20px;
   }
   .item {
     padding-top: 20px;
     padding-bottom: 20px;
   }
   img {
-    width: 100%;
+    width: 90%;
     min-height: 256px;
   }
   p {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto 20px auto;
   }
 }
@@ -357,6 +402,20 @@ section {
 
 
 /* ------ Team ------- */
+
+.accelerators {
+  padding-bottom: 10px; 
+  padding-top: 0px;
+  .img-wrapper {
+    min-height: 1em;
+    line-height: 10em;
+  }
+  img {
+    max-height: 70px;
+    max-width: 160px;
+    margin: 4px 0px;
+  }
+}
 
 .team {
   // .col-md-3 {
