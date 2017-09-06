@@ -489,10 +489,13 @@ section {
   //   }
   // }
   .row {
-    padding: 10px 15%;
+    padding: 10px 15%; 
     @media (min-width: $sm-up){
       display: flex;
       flex-wrap: wrap;
+    }
+    @media (max-width: 720px) {
+      margin: 0px -15px 10px;
     }
   }
   .picture {
