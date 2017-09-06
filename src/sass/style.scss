@@ -309,7 +309,8 @@ section {
     padding-left: 30px;
     font-size: 16px;
     @media (max-width: 768px) {
-      font-size: 14px;
+      font-size: 12px;
+      letter-spacing: 0.5px;
     }
     @media (min-width: 992px) {
       padding-left: 10px;
@@ -353,26 +354,6 @@ section {
   }
 }
 
-.product-img {
-  background-image: url(../images/product-bg.png);
-  background-size: cover;
-  width: 100%;
-  .row {
-    color: $primary-color;
-    padding: 5%;
-  }
-  .caption {
-    font-size: 50px;
-    @media (min-width: $sm-up) {
-      font-size: 60px;
-    }
-    letter-spacing: 3px;
-  }
-  h2, h3 {
-    font-weight: lighter;
-    font-style: italic;
-  }
-}
 
 .product-intro {
   p {
